@@ -85,7 +85,7 @@ $text: #74808a;
 */
 
 body {
-    font-family: 'Noto Sans','Nanum Gothic', sans-serif;
+    font-family: 'Exo 2','Nanum Gothic', sans-serif;
     font-size: 16px;
 
     &.active {
@@ -374,6 +374,7 @@ footer {
     text-align: center;
 
     h1, h2 {
+        font-weight: bold;
         margin: 0;
     }
 
@@ -384,6 +385,7 @@ footer {
         text-transform: uppercase;
         letter-spacing: 0.05em;
         line-height: 0.9em;
+        margin-bottom: 10px;
     }
 
     h2 {
@@ -391,6 +393,10 @@ footer {
         font-weight: 500;
         font-size: 2.25em;
         margin-bottom: 15px;
+    }
+
+    span {
+        font-size: 1.5em;
     }
 }
 
@@ -432,6 +438,10 @@ footer {
         animation: pulsate 1.5s ease;
         animation-iteration-count: infinite;
         padding-top: 5px;;
+    }
+
+    a {
+        margin-bottom: 15px;
     }
 }
 
