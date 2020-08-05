@@ -6,10 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Yeji Choi Portfolio</title>
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Exo+2|Nanum+Gothic&display=swap" rel="stylesheet">
-    <!-- <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet"> -->
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
@@ -26,13 +24,10 @@
         </div>
         <ul id="menu" class="shadow">
             <li>
+                <a href="#lead">Home</a>
+            </li>
+            <li>
                 <a href="#about">About</a>
-            </li>
-            <li>
-                <a href="#experience">Education</a>
-            </li>
-            <li>
-                <a href="#skills">Skills</a>
             </li>
             <li>
                 <a href="#projects">Projects</a>
@@ -48,10 +43,8 @@
         <div id="lead-content">
             <h2>WEB DEVELOPER</h2>
             <h1>최예지 포트폴리오</h1>
-            <span>YejiChoi Portfolio</span>
         </div>
-
-        <!-- End #lead-content -->
+    <!-- End #lead-content -->
 
         <div id="lead-overlay"></div>
 
@@ -70,88 +63,39 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <img src="images/profile.jpg" alt="">
+                    <img src="images/profile.jpg" alt="" id="profile_img">
+                    <div class="line" style="margin: auto;"><h2 style="color: #34221d;"><span>Yeji Choi</span></h2></div>
                 </div>
                 <div class="col-md-8" style="text-align: justify;">
-                    <!-- <label for="name">Name : </label> -->
-                    <h3 id="name">최예지</h3>
-                    <br>
-                    <!-- <label for="email">Email : </label> -->
-                    <h3 id="email">chldpwl5620@gmail.com</h3>
-                    <br>
-                    <!-- <label for="github">GitHub : </label> -->
-                    <h3 id="github">github.com/zoetrope56</h3>
-                    <!-- <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat. Donec
-                        eu vehicula neque. Donec viverra lorem nunc, tempus euismod eros sollicitudin ut. Quisque et tincidunt libero. Donec id pharetra justo. Proin euismod lacinia dolor, eu scelerisque justo tempus pharetra. Vivamus nunc justo, finibus
-                        ut nisl sed, euismod rhoncus nulla. Proin sed magna egestas, egestas ante et, congue eros. In consequat, mauris dapibus tincidunt suscipit, ex libero aliquet diam, at maximus risus enim non leo.
-                    </p> -->
+                    <div class="history">
+                        <h3>2015.03 ~ 2019.02</h3>
+                        <h4>호서대학교</h4>
+                        <p>해양IT공학과 / 컴퓨터공학과(복수전공) 졸업</p>
+                    </div>
+                    <div class="history">
+                        <h3>2019.04 ~ 2019.10</h3>
+                        <h4>KH정보교육원</h4>
+                        <p>자바(JAVA) 프레임워크 개발자 양성과정 수료</p>
+                    </div>
+                    <div class="info">
+                        <a href="https://github.com/zoetrope56" target="_blank" id="github" data-tooltip-text="github.com/zoetrope56">
+                            <i class="fa fa-github" aria-hidden="true" style="font-size: 18px;"></i>
+                            <label for="github">Github</label>
+                        </a>
+                        <a href="mailto:chldpwl5620@gmail.com" id="envelope" data-tooltip-text="chldpwl5620@gmail.com">
+                            <i class="fa fa-envelope" aria-hidden="true" style="font-size: 16px;"></i>
+                            <label for="envelope">Email</label>
+                        </a>
+                        <a id="phone" data-tooltip-text="ID:chldpwl56">
+                            <i class="fa fa-phone" aria-hidden="true" style="font-size: 18px;"></i>
+                            <label for="github">KakaoTalk</label>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- End #about -->
-
-    <div id="experience" class="background-alt">
-        <h2 class="heading">Education</h2>
-        <div id="experience-timeline">
-            <div data-date="2019-04 ~ 2019-10">
-                <h3>KH 정보교육원</h3>
-                <h4>자바(JAVA) 프레임워크 개발자 양성과정(36회차)</h4>
-            </div>
-            <div data-date="2015-02 ~ 2019-02" >
-                <h3>호서대학교</h3>
-                <h4>해양IT공학 | 컴퓨터공학(복수전공)</h4>
-            </div>
-            <div data-date="2011-03 ~ 2014-02">
-                <h3>권선고등학교</h3>
-            </div>
-
-        </div>
-    </div>
-    <!-- End #experience -->
-
-    <!-- <div id="education">
-        <h2 class="heading">Education</h2>
-        <div class="education-block">
-            <h3>KH정보교육원</h3>
-            <span class="education-date">2019-04-10 ~ 2019-10-31</span>
-            <h4>자바(JAVA) 프레임워크 개발자 양성과정(36회차)</h4>
-        </div>
-
-        <div class="education-block">
-            <h3>호서대학교 졸업</h3>
-            <span class="education-date">2015-02-27 ~ 2019-02-15</span>
-            <h4>해양IT공학, 컴퓨터공학(복수전공)</h4>
-        </div>
-
-        <div class="education-block">
-            <h3>권선고등학교 졸업</h3>
-            <span class="education-date">2011-03 ~ 2014-02</span>
-            <h4></h4>
-        </div>
-
-        End .education-block
-    </div> -->
-    <!-- End #education -->
-
-    <div id="skills">
-        <h2 class="heading">Skills</h2>
-        <ul>
-            <li>Java</li>
-            <li>Python</li>
-            <li>JSP</li>
-            <li>Spring Framework</li>
-            <li>Mybatis</li>
-            <li>Linux</li>
-            <li>Oracle</li>
-            <li>MySQL</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-        </ul>
-    </div>
-    <!-- End #skills -->
 
     <div id="projects" class="background-alt">
         <h2 class="heading">Projects</h2>
@@ -159,13 +103,18 @@
             <div class="row">
                 <div class="project shadow-large">
                     <div class="project-image">
-                        <img src="images/project.jpg" />
+                        <img src="images/tunamusuc_sample().png" />
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
-                        <h3>SalmonBooks : </h3>
+                        <h3>TunaMusic</h3>
+                        <h4>19.09.22 ~ 19.10.31</h4>
+                        <span>#Spring Framework</span>
+                        <span>#Oracle</span>
+                        <span>#Bootstrap</span>
+                        <br>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                            이용권을 결제하여 음악을 다운로드하는 기존의 음악 사이트와 크라우드 펀딩을 결합하여 회원이 직접 참여할 수 있는 사용자 위주의 사이트를 개발하고자 했다. 
                         </p>
                         <a href="#">View Project</a>
                     </div>
@@ -175,13 +124,35 @@
 
                 <div class="project shadow-large">
                     <div class="project-image">
-                        <img src="images/project.jpg" />
+                        <img src="images/SalmonBooks_sample().png"/>
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
-                        <h3>Project Name Here</h3>
+                        <h3>SalmonBooks</h3>
+                        <h4>19.07.02 ~ 19.09.09</h4>
+                        <span>#JSP</span>
+                        <span>#JavaScript</span>
+                        <span>#HTML</span>
+                        <span>#CSS</span>
+                        <br>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                            사용자가 간편하게 등록할 수 있는 웹소설 플랫폼을 개발하고자 했다. 직접 소설을 올리는 것뿐만아니라 텍스트 편집기를 통해 꾸밈효과를 줄 수 있고  
+                        </p>
+                        <a href="#">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/graduation_sample.png" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>SmartFarm</h3>
+                        <h4>18.08.27 ~ 19.12.05</h4>
+                        <p>
+                            바쁜 현대사회인들을 위해 시간과 장소에 구애받지 않고 언제든지 인터넷을 통해 관리할 수 있는 재배시스템을 개발하고자 했다.
                         </p>
                         <a href="#">View Project</a>
                     </div>
@@ -212,7 +183,7 @@
             <div class="row">
                 <div class="col-sm-5 copyright">
                     <p>
-                        <a href="https://github.com/RyanFitzgerald/devportfolio">Copyright &copy; 2017 Ryan Fitzgerald</a>
+                        <a href="https://github.com/zoetrope56/devportfolio" target="_blank">Copyright &copy; 2020 Yeji Choi</a>
                     </p>
                 </div>
                 <div class="col-sm-2 top">
@@ -225,21 +196,6 @@
                         <li>
                             <a href="https://github.com/zoetrope56" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
                         </li>
-                        <!-- <li>
-                            <a href="https://stackoverflow.com/" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
-                        </li> -->
-                        <!-- <li>
-                            <a href="https://linkedin.com/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        </li> -->
-                        <li>
-                            <a href="https://www.facebook.com/profile.php?id=100009210598243" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/zoetrope_dev" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                        </li>
-                        <!-- <li>
-                            <a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                        </li> -->
                     </ul>
                 </div>
             </div>

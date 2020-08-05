@@ -48,6 +48,7 @@ $border: #dcd9d9;
 $heading: #374054;
 $text: #74808a;
 
+
 /*
     ---------------------
     ----- 2. Mixins -----
@@ -314,6 +315,9 @@ footer {
         background: #fff;
         text-decoration: none;
     }
+    &:focus {
+        text-decoration: none;
+    }
 }
 
 .shadow {
@@ -346,6 +350,48 @@ footer {
 
 .background-alt {
     background: $background-alt;
+}
+
+[data-tooltip-text]:hover {
+    position: relative;
+}
+
+[data-tooltip-text]:after {
+    -webkit-transition: bottom .3s ease-in-out, opacity .3s ease-in-out;
+	-moz-transition: bottom .3s ease-in-out, opacity .3s ease-in-out;
+	transition: bottom .3s ease-in-out, opacity .3s ease-in-out;
+
+    background-color: rgba(0, 0, 0, 0.8);
+    
+    -webkit-box-shadow: 0px 0px 3px 1px rgba(50, 50, 50, 0.4);
+	-moz-box-shadow: 0px 0px 3px 1px rgba(50, 50, 50, 0.4);
+	box-shadow: 0px 0px 3px 1px rgba(50, 50, 50, 0.4);
+    
+    -webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+    
+    color: #FFFFFF;
+	font-size: 12px;
+	margin-bottom: 10px;
+	padding: 7px 12px;
+	position: absolute;
+	width: auto;
+	min-width: 50px;
+	max-width: 300px;
+	word-wrap: break-word;
+	z-index: 99;
+	opacity: 0;
+    left: -9999px;
+    bottom: 90%;
+	
+	content: attr(data-tooltip-text);
+}
+
+[data-tooltip-text]:hover:after {
+	bottom: 130%;
+	left: 0;
+	opacity: 1;
 }
 
 /*
@@ -396,6 +442,7 @@ footer {
     }
 
     span {
+        color: #b6c7e7;
         font-size: 1.5em;
     }
 }
@@ -468,27 +515,84 @@ footer {
 #about {
     padding: 75px 15px;
     text-align: center;
-    border-bottom: 1px solid $border;
 
     h2 {
         color: $heading;
     }
 
+    h3{
+        margin: 10px 0px;
+    }
+
     h4 {
+        margin: 10px;
         color: $heading;
+        display: inline;
+    }
+
+    a {
+        margin: 5px;
+        padding: 5px;
+        color: #000;
+
+        &:hover {
+            text-decoration: none;
+            background: #eee;
+            border-radius: 4px;
+        }
+
+        &:focus {
+            text-decoration: none;
+        }
     }
 
     p {
+        margin: 10px;
         color: $text;
-        margin: 0;
+        font-size: 14px;
+        display: inline;
     }
 
     img {
-        // width: 70%;
-        // height: 70%;
-        width: 252px;
-        height: 252px;
+        width: 50%;
+        height: 50%;
         border-radius: 30%;
+        margin-bottom: 20px;
+    }
+
+    i {
+        margin: 0px 3px;
+        vertical-align: middle;
+    }
+    
+}
+
+.line {
+    h2 { 
+        background-color: #f8eaeb; 
+        width: 110px; 
+        height: 14px; 
+        margin: auto;
+        position: relative;
+    }
+    
+    span {
+        top: -11px; 
+        left: 10px; 
+        position: absolute;
+    }
+}
+
+.history {
+    margin-bottom: 30px;
+}
+
+.info {
+    padding-top: 5px;
+    
+    label {
+        font-size: 12px;
+        text-align: left;
     }
 }
 
@@ -501,7 +605,6 @@ footer {
 #experience {
     padding: 50px 15px;
     text-align: center;
-    border-bottom: 1px solid $border;
 
     h2 {
         color: $heading;
@@ -611,7 +714,6 @@ footer {
 
 #education {
     padding: 50px 15px 20px 15px;
-    border-bottom: 1px solid $border;
     text-align: center;
 
     h2 {
@@ -665,7 +767,6 @@ footer {
 
 #projects {
     padding: 50px 15px;
-    border-bottom: 1px solid $border;
     text-align: center;
 
     h2 {
@@ -681,14 +782,25 @@ footer {
     overflow: hidden;
     background: #fff;
     border-radius: 4px;
+    span {
+        color: #74808a;
+        font-size: 14px;
+        font-weight: bold;
+    }
 }
 
 .project-image {
     float: left;
+
+    img {
+        width: 480px;
+        height: 360px;
+    }
 }
 
 .project-info {
     position: absolute;
+    width: 580px;
     top: 50%;
     transform: translateY(-50%);
     margin-left: 300px;
@@ -698,7 +810,13 @@ footer {
         font-size: 1.5em;
         font-weight: 300;
         color: $heading;
-        margin: 0 0 15px 0;
+        margin: 0px;
+    }
+
+    h4 {
+        margin: 0px 0px 15px 0px;
+        color: $text;
+        font-weight: lighter;
     }
 
     p {
@@ -747,8 +865,9 @@ footer {
         display: inline-block;
         margin: 7px;
         padding: 5px 10px;
-        color: $heading;
-        background: darken($background-alt, 5%);
+        color: #fff;
+        background: $heading;
+        // background: darken($background-alt, 5%);
         list-style: none;
         cursor: default;
         font-size: 1.2em;
