@@ -782,11 +782,17 @@ footer {
     overflow: hidden;
     background: #fff;
     border-radius: 4px;
-    span {
-        color: #74808a;
-        font-size: 14px;
-        font-weight: bold;
+    label {
+        background-color: #E9ECF3;
+        color: #263747;
+        font-size: 0.9em;
+        padding: 0.135em 0.385em;
+        border-radius: 0.35em;
     }
+}
+
+#tech-stack {
+    margin-bottom: 5px;
 }
 
 .project-image {

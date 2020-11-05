@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,7 +11,6 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
 </head>
-
 <body>
     <div id="mobile-menu-open" class="shadow-large">
         <i class="fa fa-bars" aria-hidden="true"></i>
@@ -45,11 +43,9 @@
             <h1>최예지 포트폴리오</h1>
         </div>
     <!-- End #lead-content -->
-
         <div id="lead-overlay"></div>
-
         <div id="lead-down">
-            <a href="#" class="btn-rounded-white">Download PDF</a>
+            <a href="./portfolio_pdf/최예지_포트폴리오.pdf" class="btn-rounded-white">Download PDF</a>
             <span>
                 <i class="fa fa-chevron-down" aria-hidden="true"></i>
             </span>
@@ -70,25 +66,25 @@
                     <div class="history">
                         <h3>2015.03 ~ 2019.02</h3>
                         <h4>호서대학교</h4>
-                        <p>해양IT공학과 / 컴퓨터공학과(복수전공) 졸업</p>
+                        <p>해양IT공학과(주전공), 컴퓨터공학과(복수전공) 졸업</p>
                     </div>
                     <div class="history">
                         <h3>2019.04 ~ 2019.10</h3>
                         <h4>KH정보교육원</h4>
-                        <p>자바(JAVA) 프레임워크 개발자 양성과정 수료</p>
+                        <p>자바(JAVA) 프레임워크 개발자 양성과정(36회차) 수료</p>
                     </div>
                     <div class="info">
-                        <a href="https://github.com/zoetrope56" target="_blank" id="github" data-tooltip-text="github.com/zoetrope56">
-                            <i class="fa fa-github" aria-hidden="true" style="font-size: 18px;"></i>
-                            <label for="github">Github</label>
+                        <a id="phone" data-tooltip-text="01041391258">
+                            <i class="fa fa-phone" aria-hidden="true" style="font-size: 18px;"></i>
+                            <label for="phone">Phone</label>
                         </a>
                         <a href="mailto:chldpwl5620@gmail.com" id="envelope" data-tooltip-text="chldpwl5620@gmail.com">
                             <i class="fa fa-envelope" aria-hidden="true" style="font-size: 16px;"></i>
                             <label for="envelope">Email</label>
                         </a>
-                        <a id="phone" data-tooltip-text="ID:chldpwl56">
-                            <i class="fa fa-phone" aria-hidden="true" style="font-size: 18px;"></i>
-                            <label for="github">KakaoTalk</label>
+                        <a href="https://github.com/zoetrope56" target="_blank" id="github" data-tooltip-text="github.com/zoetrope56">
+                            <i class="fa fa-github" aria-hidden="true" style="font-size: 18px;"></i>
+                            <label for="github">Github</label>
                         </a>
                     </div>
                 </div>
@@ -109,10 +105,12 @@
                     <div class="project-info">
                         <h3>TunaMusic</h3>
                         <h4>19.09.22 ~ 19.10.31</h4>
-                        <span>#Spring Framework</span>
-                        <span>#Oracle</span>
-                        <span>#Bootstrap</span>
-                        <br>
+                        <div id="tech-stack">
+                            <label>Java</label>
+                            <label>Spring Framework</label>
+                            <label>Oracle Database</label>
+                            <label>Apache Tomcat</label>
+                        </div>
                         <p>
                             이용권을 결제하여 음악을 다운로드하는 기존의 음악 사이트와 크라우드 펀딩을 결합하여 회원이 직접 참여할 수 있는 사용자 위주의 사이트를 개발하고자 했다. 
                         </p>
@@ -130,13 +128,17 @@
                     <div class="project-info">
                         <h3>SalmonBooks</h3>
                         <h4>19.07.02 ~ 19.09.09</h4>
-                        <span>#JSP</span>
-                        <span>#JavaScript</span>
-                        <span>#HTML</span>
-                        <span>#CSS</span>
-                        <br>
+                        <div id="tech-stack">
+                            <label>Java</label>
+                            <label>JSP</label>
+                            <label>JavaScript</label>
+                            <label>HTML</label>
+                            <label>CSS</label>
+                            <label>Oracle Database</label>
+                            <label>Apache Tomcat</label>
+                        </div>
                         <p>
-                            사용자가 간편하게 등록할 수 있는 웹소설 플랫폼을 개발하고자 했다. 직접 소설을 올리는 것뿐만아니라 텍스트 편집기를 통해 꾸밈효과를 줄 수 있고  
+                            사용자가 간편하게 등록할 수 있는 웹 소설 플랫폼을 개발하고자 했다. 직접 소설을 올리는 것뿐만 아니라 텍스트 편집기를 통해 꾸밈 효과를 줄 수 있다.
                         </p>
                         <a href="#">View Project</a>
                     </div>
@@ -151,8 +153,14 @@
                     <div class="project-info">
                         <h3>SmartFarm</h3>
                         <h4>18.08.27 ~ 19.12.05</h4>
+                        <div id="tech-stack">
+                            <label>Arduino</label>
+                            <label>Raspberry Pi</label>
+                            <label>Python</label>
+                            <label>Linux</label>
+                        </div>
                         <p>
-                            바쁜 현대사회인들을 위해 시간과 장소에 구애받지 않고 언제든지 인터넷을 통해 관리할 수 있는 재배시스템을 개발하고자 했다.
+                            집에서 키우는 식물들을 공간에 구애받지 않고 언제든 케어할 수 있는 재배시스템을 개발하고자 했다. 웹을 통해 각종 센서와 모터를 구동시켜 환경을 제어하고 상태를 확인할 수 있다.
                         </p>
                         <a href="#">View Project</a>
                     </div>
@@ -206,5 +214,4 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/scripts.min.js"></script>
 </body>
-
 </html>
